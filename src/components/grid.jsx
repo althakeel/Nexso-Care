@@ -88,10 +88,9 @@ const Grid = () => {
           ...(animate ? gridStyles.leftColumnVisible : {}),
         }}
       >
-        <h2 style={gridStyles.heading}>Smart Tech Starts with Nexso</h2>
+        <h2 style={gridStyles.heading}>Feel Good, Look Fresh with Nexso</h2>
         <p style={gridStyles.subheading}>
-          Explore cutting-edge electronics designed for your home, work, and lifestyle. From smart gadgets to high-performance gear — Nexso brings innovation to your fingertips.
-        </p>
+        From hydrating cleansers to revitalizing face washes and signature scents — Nexso keeps your glow going strong.        </p>
         <a
           href="https://nexso.ae"
           target="_blank"

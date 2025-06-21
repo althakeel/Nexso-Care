@@ -9,27 +9,28 @@ const ThreePics = () => {
       <a href="#" className="threepics-viewmore">View more →</a>
 
       <div className="threepics-cards">
-        <div className="threepics-card">
-          <div className="image-wrapper">
-            <img src="https://res.cloudinary.com/drkfb976p/image/upload/v1750329626/15_djwwrs.webp" alt="Gaming" />
-          </div>
-          <h3>Gaming</h3>
-        </div>
+  <div className="threepics-card">
+    <div className="image-wrapper">
+      <img src="https://res.cloudinary.com/drkfb976p/image/upload/v1750511311/28_csjkij.webp" alt="Cleanser" />
+    </div>
+    <h3>Gentle Cleanser</h3>
+  </div>
 
-        <div className="threepics-card">
-          <div className="image-wrapper">
-            <img src="https://res.cloudinary.com/drkfb976p/image/upload/v1750329625/16_rpb7j4.webp" alt="Graphic Design" />
-          </div>
-          <h3>Graphic Design</h3>
-        </div>
+  <div className="threepics-card">
+    <div className="image-wrapper">
+      <img src="https://res.cloudinary.com/drkfb976p/image/upload/v1750511310/29_tmnqyv.webp" alt="Perfume" />
+    </div>
+    <h3>Luxury Fragrance</h3>
+  </div>
 
-        <div className="threepics-card">
-          <div className="image-wrapper">
-            <img src="https://res.cloudinary.com/drkfb976p/image/upload/v1750329625/17_qpqj7r.webp" alt="Office & Others" />
-          </div>
-          <h3>Office & Others</h3>
-        </div>
-      </div>
+  <div className="threepics-card">
+    <div className="image-wrapper">
+      <img src="https://res.cloudinary.com/drkfb976p/image/upload/v1750511310/27_rh70xu.webp" alt="Face Wash" />
+    </div>
+    <h3>Foaming Face Wash</h3>
+  </div>
+</div>
+
     </div>
   );
 }

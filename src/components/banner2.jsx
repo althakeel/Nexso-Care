@@ -6,7 +6,7 @@ const Banner = () => {
     width: '100%',
     maxWidth: '100vw', // Prevent any overflow beyond viewport
     height: '80vh',
-    backgroundImage: 'url("https://res.cloudinary.com/drkfb976p/image/upload/v1750327832/14_ujinpv.webp")',
+    backgroundImage: 'url("https://res.cloudinary.com/drkfb976p/image/upload/v1750511309/26_nz9kwl.webp")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     display: 'flex',
@@ -23,7 +23,7 @@ const Banner = () => {
   const overlayStyles = {
     position: 'absolute',
     inset: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+    backgroundColor: 'rgba(0, 0, 0, 0.2)',
     zIndex: 1,
   };
 
@@ -73,18 +73,18 @@ const Banner = () => {
     <section style={bannerStyles}>
       <div style={overlayStyles}></div>
       <div style={contentStyles}>
-        <h1 style={headingStyles}>Empowering Tomorrow, Today</h1>
+        <h1 style={headingStyles}>Caring for Tomorrow, Today</h1>
         <p style={subheadingStyles}>
-          Explore Nexso’s innovative electronics designed to transform your digital lifestyle.
+        Discover Nexso Care's cutting-edge electronics—crafted to enhance your digital lifestyle with innovation, reliability, and support you can count on.
         </p>
         <button
-          style={buyNowButtonStyles}
-          onMouseEnter={handleBuyNowHover}
-          onMouseLeave={handleBuyNowLeave}
-          onClick={() => alert('Buy Now clicked!')}
-        >
-          Buy Now
-        </button>
+  style={buyNowButtonStyles}
+  onMouseEnter={handleBuyNowHover}
+  onMouseLeave={handleBuyNowLeave}
+  onClick={() => window.open('https://nexso.ae', '_blank')}
+>
+  Buy Now
+</button>
       </div>
     </section>
   );

@@ -73,11 +73,11 @@ const Banner = () => {
     <section style={bannerStyles}>
       <div style={overlayStyles}></div>
       <div style={contentStyles}>
-        <h1 style={headingStyles}>Caring for Tomorrow, Today</h1>
+        <h1 style={headingStyles}>Inspiring Journeys, One Step at a Time</h1>
         <p style={subheadingStyles}>
-        Discover Nexso Care's cutting-edge electronics—crafted to enhance your digital lifestyle with innovation, reliability, and support you can count on.
-        </p>
-        <button
+        Discover Nexso’s smart travel essentials built to enhance every journey.
+</p>
+<button
   style={buyNowButtonStyles}
   onMouseEnter={handleBuyNowHover}
   onMouseLeave={handleBuyNowLeave}
@@ -85,6 +85,7 @@ const Banner = () => {
 >
   Buy Now
 </button>
+
       </div>
     </section>
   );

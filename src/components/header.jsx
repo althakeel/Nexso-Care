@@ -6,7 +6,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  const menuItems = ['Home', 'About', 'Product', 'Contact'];
+  const menuItems = ['Home','Product', 'About',  'Contact'];
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
@@ -27,8 +27,8 @@ const Header = () => {
   return (
     <header style={styles.header}>
       <img
-        src="https://res.cloudinary.com/drkfb976p/image/upload/v1750495228/Electronics_2_n2dj2h.png"
-        alt="Nexso Logo"
+          src="https://nexso.ae/cdn/shop/files/gempages_570467022396195992-47fa007c-ed4c-493e-9ce5-054822685112.png?v=1749558524&width=185"
+          alt="Nexso Logo"
         style={styles.logo}
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       />
@@ -114,7 +114,7 @@ const styles = {
     top: 0,
     left: 0,
     width: '100%',
-    height: '60px',
+    height: '80px',
     background: 'rgba(16,16,16, 0.85)',
     backdropFilter: 'saturate(180%) blur(20px)',
     WebkitBackdropFilter: 'saturate(180%) blur(20px)',
@@ -128,7 +128,7 @@ const styles = {
     fontFamily: "'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif",
   },
   logo: {
-    height: '24px',
+    height: '34px',
     cursor: 'pointer',
   },
   nav: {
@@ -166,7 +166,7 @@ const styles = {
   },
   button: {
     padding: '8px 20px',
-    border: '1px solid #0FF8CB',
+    // border: '1px solid #0FF8CB',
     backgroundColor: '#15F95B',
     color: '#000',
     borderRadius: '20px',

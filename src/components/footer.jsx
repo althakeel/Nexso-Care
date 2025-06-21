@@ -25,7 +25,7 @@ const Footer = () => {
   };
 
   const logoImageStyle = {
-    height: '60px',
+    height: '50px',
     // filter: 'drop-shadow(0 0 5px #1db954)',
     cursor: 'pointer',
     alignSelf: 'flex-start',
@@ -35,7 +35,7 @@ const Footer = () => {
     display: 'flex',
     flexDirection: 'column',
     gap: '12px',
-    fontSize: '1.2rem',
+    fontSize: '14px',
   };
 
   const menuItemStyle = {

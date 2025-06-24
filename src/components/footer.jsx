@@ -67,6 +67,7 @@ const Footer = () => {
   const socialIcons = [
     {
       name: 'Facebook',
+       url: 'https://www.instagram.com/nexso.ae/',
       svg: (
         <svg
           fill="currentColor"
@@ -81,6 +82,7 @@ const Footer = () => {
     },
     {
       name: 'Twitter',
+       url: 'https://www.instagram.com/nexso.ae/',
       svg: (
         <svg
           fill="currentColor"
@@ -95,6 +97,7 @@ const Footer = () => {
     },
     {
       name: 'Instagram',
+       url: 'https://www.instagram.com/nexso.ae/',
       svg: (
         <svg
           fill="currentColor"
@@ -113,14 +116,18 @@ const Footer = () => {
   const [policyHoverIndex, setPolicyHoverIndex] = React.useState(null);
 
   const mainMenuItems = ['Home', 'About', 'Services', 'Contact'];
-  const policyItems = ['Privacy Policy', 'Terms of Service', 'Support', 'FAQ'];
+const policyItems = [
+  { name: 'Privacy Policy', url: 'https://nexso.ae/policies/privacy-policy' },
+  { name: 'Terms of Service', url: 'https://nexso.ae/policies/privacy-policy' },
 
+  { name: 'FAQ', url: 'https://nexso.ae/policies/faq' },
+];
   return (
     <footer style={footerStyle}>
       {/* Column 1: Logo */}
       <div style={columnStyle}>
         <img
-          src="https://nexso.ae/cdn/shop/files/gempages_570467022396195992-47fa007c-ed4c-493e-9ce5-054822685112.png?v=1749558524&width=185"
+          src="https://res.cloudinary.com/drkfb976p/image/upload/v1750743855/Care_2_hcvru4.png"
           alt="Logo"
           style={logoImageStyle}
         />
@@ -145,41 +152,41 @@ const Footer = () => {
       </nav>
 
       {/* Column 3: Policy/Support Menu */}
-      <nav style={{ ...columnStyle, ...menuStyle }}>
-        {policyItems.map((item, index) => (
-          <a
-            key={item}
-            href={`#${item.toLowerCase().replace(/\s/g, '-')}`}
-            style={{
-              ...menuItemStyle,
-              ...(policyHoverIndex === index ? menuItemHoverStyle : {}),
-            }}
-            onMouseEnter={() => setPolicyHoverIndex(index)}
-            onMouseLeave={() => setPolicyHoverIndex(null)}
-          >
-            {item}
-          </a>
-        ))}
-      </nav>
+     <nav style={{ ...columnStyle, ...menuStyle }}>
+  {policyItems.map((item, index) => (
+    <a
+      key={item.name}
+      href={item.url}
+      style={{
+        ...menuItemStyle,
+        ...(policyHoverIndex === index ? menuItemHoverStyle : {}),
+      }}
+      onMouseEnter={() => setPolicyHoverIndex(index)}
+      onMouseLeave={() => setPolicyHoverIndex(null)}
+    >
+      {item.name}
+    </a>
+  ))}
+</nav>
 
       {/* Column 4: Social Icons */}
       <div style={{ ...columnStyle, justifyContent: 'flex-start' }}>
         <div style={socialIconsStyle}>
-          {socialIcons.map(({ name, svg }) => (
-            <a
-              key={name}
-              href="#"
-              aria-label={name}
-              style={socialIconLinkStyle}
-              target="_blank"
-              rel="noopener noreferrer"
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#1db954')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#eee')}
-            >
-              {svg}
-            </a>
-          ))}
-        </div>
+  {socialIcons.map(({ name, svg, url }) => (
+    <a
+      key={name}
+      href={url}
+      aria-label={name}
+      style={socialIconLinkStyle}
+      target="_blank"
+      rel="noopener noreferrer"
+      onMouseEnter={(e) => (e.currentTarget.style.color = '#1db954')}
+      onMouseLeave={(e) => (e.currentTarget.style.color = '#eee')}
+    >
+      {svg}
+    </a>
+  ))}
+</div>
       </div>
     </footer>
   );
